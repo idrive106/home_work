@@ -44,3 +44,28 @@ my_favorite_songs_dict = {
 # Пункт D.
 # Переведите минуты и секунды в формат времени. Используйте модуль datetime 
 
+import random
+
+# выберем три случайные песни
+selected_songs = random.sample(my_favorite_songs, 3)
+
+# вычислим общее время звучания трех песен
+total_duration = 0
+for song in selected_songs:
+    total_duration += song[1]
+
+# выведем результат в формате "Три песни звучат ХХХ минут"
+print(f"Три песни звучат {total_duration:.0f} минут")
+
+import random
+
+# выберем три случайные песни
+selected_songs = random.sample(list(my_favorite_songs_dict.items()), 3)
+
+# вычислим общее время звучания трех песен
+total_duration = 0
+for song in selected_songs:
+    total_duration += song[1]
+
+# выведем результат в формате "Три песни звучат ХХХ минут"
+print(f"Три песни звучат {total_duration:.0f} минут")
