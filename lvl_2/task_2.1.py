@@ -10,8 +10,24 @@
 # * [5]                             -> min = 5, max = 5
 # функции max и min использовать нельзя!
 
+arr = [-52, 56, 30, 29, -54, 0, -110]
+
 def minimum(arr):
-    pass
+    min_num = arr[0]
+    for num in arr:
+        if num < min_num:
+            min_num = num
+    return min_num
 
 def maximum(arr):
-    pass
+    max_num = arr[0]
+    for num in arr:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+min_num = minimum(arr)
+
+max_num = maximum(arr)
+
+print("min =", min_num, ", max =", max_num)
