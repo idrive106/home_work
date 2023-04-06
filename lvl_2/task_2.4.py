@@ -8,7 +8,7 @@
 # foo("Oh, no!!!") -> "Oh, no"
 
 def remove_exclamation_marks(s):
-    pass
+    return s.replace('!', '')
 
 
 # Пункт B.
